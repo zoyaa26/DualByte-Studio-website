@@ -14,12 +14,12 @@ export default function Portfolio() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Beberapa proyek yang telah kami kerjakan.
+            Beberapa proyek yang telah kami kerjakan
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
             Contoh proyek digital yang dikembangkan dengan pendekatan modern,
-            fungsional, dan disesuaikan dengan kebutuhan pengguna.
+            fungsional, dan disesuaikan dengan kebutuhan pengguna
           </p>
         </div>
 

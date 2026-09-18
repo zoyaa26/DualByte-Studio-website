@@ -7,7 +7,7 @@ const services = [
   {
     title: "Pengembangan Aplikasi Mobile",
     description:
-      "Membangun aplikasi mobile yang modern dengan pengalaman pengguna yang nyaman dan fungsional.",
+      "Membangun aplikasi mobile modern dengan pengalaman pengguna yang nyaman dan fungsional.",
   },
   {
     title: "Perangkat Lunak Kustom",
@@ -25,36 +25,37 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#08111F] px-6 py-24 sm:px-8 lg:px-12"
+      className="bg-[#F5FAFF] px-6 py-24 sm:px-8 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
+        {/* Heading */}
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
+          <p className="text-sm font-semibold uppercase tracking-widest text-sky-500">
             Layanan
           </p>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Solusi digital untuk kebutuhan bisnis Anda
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+            Solusi digital untuk kebutuhan bisnis Anda.
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-slate-400">
+          <p className="mt-6 text-lg leading-8 text-slate-600">
             Kami membantu mengubah kebutuhan dan ide bisnis menjadi produk
-            digital yang dapat digunakan secara nyata
+            digital yang dapat digunakan secara nyata.
           </p>
         </div>
 
+        {/* Service Cards */}
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-blue-400/10 bg-[#08111F] p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-blue-400/25"
+              className="group rounded-2xl border border-sky-100 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-lg"
             >
-             
-              <h3 className="mt-5 text-2xl font-semibold text-white">
+              <h3 className="text-2xl font-semibold text-slate-900">
                 {service.title}
               </h3>
 
-              <p className="mt-4 leading-7 text-slate-400">
+              <p className="mt-4 leading-7 text-slate-600">
                 {service.description}
               </p>
             </div>

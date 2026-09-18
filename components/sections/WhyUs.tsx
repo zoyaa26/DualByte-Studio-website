@@ -45,12 +45,12 @@ export default function WhyUs() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Dibangun dengan standar yang jelas.
+            Dibangun dengan standar yang jelas
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
             Kami mengutamakan kualitas teknis, komunikasi yang baik, dan solusi
-            yang benar-benar sesuai dengan kebutuhan proyek.
+            yang sesuai dengan kebutuhan 
           </p>
         </div>
 

@@ -87,15 +87,6 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-8 sm:gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
         {/* Kolom kiri */}
         <div className="relative z-10 text-center lg:text-left">
-          {/* Label */}
-          <div className="animate-fade-up mb-4 inline-flex items-center gap-2 rounded-full border border-sky-100 bg-sky-50 px-3.5 py-2 sm:mb-6 sm:px-4">
-            <span className="h-2 w-2 shrink-0 rounded-full bg-sky-500" />
-
-            <span className="text-[11px] font-semibold uppercase tracking-wide text-sky-700 sm:text-sm">
-              Solusi Digital Profesional
-            </span>
-          </div>
-
           {/* Headline */}
           <h1 className="animate-fade-up text-[2.2rem] font-extrabold leading-[1.08] tracking-tight text-slate-900 min-[400px]:text-[2.45rem] sm:text-5xl sm:leading-[1.12] lg:text-6xl xl:text-[4.25rem]">
             Wujudkan Ide

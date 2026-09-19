@@ -23,15 +23,17 @@ export default function Footer() {
           <a
             href="mailto:duallbytestudio@gmail.com"
             aria-label="Email DualByte Studio"
-            className="flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50 text-sky-500 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-100"
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50 text-sky-500 transition duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-100"
           >
             <Mail size={19} strokeWidth={2} />
           </a>
 
           <a
             href="https://wa.me/628979147452"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="WhatsApp DualByte Studio"
-            className="flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50 text-sky-500 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-100"
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50 text-sky-500 transition duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-100"
           >
             <MessageCircle size={19} strokeWidth={2} />
           </a>

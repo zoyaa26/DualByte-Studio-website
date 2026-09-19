@@ -1,3 +1,4 @@
+import Reveal from "@/components/ui/Reveal";
 const reasons = [
   {
     number: "01",
@@ -55,22 +56,21 @@ export default function WhyUs() {
         </div>
 
         {/* Reasons */}
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          {reasons.map((reason) => (
-  <div
-    key={reason.title}
-    className="group rounded-2xl border border-sky-100 bg-[#F5FAFF] p-6 transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:bg-sky-50 hover:shadow-md"
-  >
-    <h3 className="font-semibold text-slate-900">
-      {reason.title}
-    </h3>
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {reasons.map((reason, index) => (
+    <Reveal key={reason.title} delay={index * 120}>
+      <div className="h-full rounded-2xl border border-sky-100 bg-[#F5FAFF] p-8 transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:bg-white hover:shadow-lg">
+        <h3 className="text-xl font-semibold text-slate-900">
+          {reason.title}
+        </h3>
 
-    <p className="mt-3 text-sm leading-6 text-slate-600">
-      {reason.description}
-    </p>
-  </div>
-))}
-        </div>
+        <p className="mt-4 leading-7 text-slate-600">
+          {reason.description}
+        </p>
+      </div>
+    </Reveal>
+  ))}
+</div>
       </div>
     </section>
   );

@@ -1,267 +1,264 @@
+import {
+  ArrowUpRight,
+  BriefcaseBusiness,
+  Code2,
+} from "lucide-react";
+
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiNodedotjs,
+  SiFlutter,
+  SiPython,
+  SiPostgresql,
+  SiMysql,
+  SiSqlite,
+  SiGithub,
+  SiGit,
+} from "react-icons/si";
+
+const technologies = [
+  {
+    name: "React.js",
+    Icon: SiReact,
+    color: "#61DAFB",
+  },
+  {
+    name: "Next.js",
+    Icon: SiNextdotjs,
+    color: "#111827",
+  },
+  {
+    name: "TypeScript",
+    Icon: SiTypescript,
+    color: "#3178C6",
+  },
+  {
+    name: "Node.js",
+    Icon: SiNodedotjs,
+    color: "#5FA04E",
+  },
+  {
+    name: "Flutter",
+    Icon: SiFlutter,
+    color: "#02569B",
+  },
+  {
+    name: "Python",
+    Icon: SiPython,
+    color: "#3776AB",
+  },
+  {
+    name: "PostgreSQL",
+    Icon: SiPostgresql,
+    color: "#4169E1",
+  },
+  {
+    name: "MySQL",
+    Icon: SiMysql,
+    color: "#00758F",
+  },
+  {
+    name: "SQLite",
+    Icon: SiSqlite,
+    color: "#0F80CC",
+  },
+];
+
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-white px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-36 lg:px-12 lg:pb-32"
+      className="relative isolate overflow-hidden bg-white px-5 pb-10 pt-24 sm:px-8 sm:pb-20 sm:pt-32 lg:px-12 lg:pb-24 lg:pt-28"
     >
-      {/* Dekorasi latar */}
-      <div className="pointer-events-none absolute -right-32 top-24 h-80 w-80 rounded-full bg-sky-100/70 blur-3xl" />
+      {/* Dekorasi latar belakang */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-40 top-32 -z-10 h-72 w-72 rounded-full bg-sky-100/60 blur-3xl sm:top-36 sm:h-96 sm:w-96"
+      />
 
-      <div className="pointer-events-none absolute -left-32 bottom-0 h-72 w-72 rounded-full bg-blue-50 blur-3xl" />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -left-48 bottom-0 -z-10 h-72 w-72 rounded-full bg-blue-50/80 blur-3xl sm:h-96 sm:w-96"
+      />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2 lg:gap-12">
-        {/* Kolom kiri: Konten */}
+      {/* Konten utama */}
+      <div className="mx-auto grid max-w-7xl items-center gap-8 sm:gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-14">
+        {/* Kolom kiri */}
         <div className="relative z-10 text-center lg:text-left">
           {/* Label */}
+          <div className="animate-fade-up mb-4 inline-flex items-center gap-2 rounded-full border border-sky-100 bg-sky-50 px-3.5 py-2 sm:mb-6 sm:px-4">
+            <span className="h-2 w-2 shrink-0 rounded-full bg-sky-500" />
 
-          {/* Heading */}
-          <h1 className="animate-fade-up text-5xl font-bold tracking-tight text-slate-900">
+            <span className="text-[11px] font-semibold uppercase tracking-wide text-sky-700 sm:text-sm">
+              Solusi Digital Profesional
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="animate-fade-up text-[2.2rem] font-extrabold leading-[1.08] tracking-tight text-slate-900 min-[400px]:text-[2.45rem] sm:text-5xl sm:leading-[1.12] lg:text-6xl xl:text-[4.25rem]">
             Wujudkan Ide
             <br />
             Digital Anda
             <br />
             <span className="text-sky-500">
-              Bersama DualByte
+              Bersama DualByte.
             </span>
           </h1>
 
           {/* Deskripsi */}
-          <p className="animate-fade-up animation-delay-200 mt-6 text-lg leading-8 text-slate-600">
-            Kami membantu bisnis dan startup membangun website,
-            aplikasi mobile, dan perangkat lunak kustom yang modern,
-            fungsional, serta sesuai dengan kebutuhan Anda
+          <p className="animate-fade-up animation-delay-200 mx-auto mt-4 max-w-xl text-sm leading-6 text-slate-600 sm:mt-6 sm:text-lg sm:leading-8 lg:mx-0">
+            Kami membantu bisnis dan startup mewujudkan ide digital
+            menjadi produk perangkat lunak yang cepat, andal, dan
+            sesuai dengan kebutuhan Anda.
           </p>
 
-
-          {/* Tombol */}
-         <div className="animate-fade-up animation-delay-400 mt-8 flex flex-wrap gap-4">
+          {/* Tombol CTA */}
+          <div className="animate-fade-up animation-delay-400 mx-auto mt-6 grid max-w-lg grid-cols-1 gap-3 min-[400px]:grid-cols-2 sm:mx-0 sm:mt-8 sm:flex sm:max-w-none sm:justify-center sm:gap-4 lg:justify-start">
             <a
               href="#contact"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-500 px-7 py-4 font-semibold text-white shadow-md shadow-sky-100 transition duration-300 hover:-translate-y-1 hover:bg-sky-600 hover:shadow-lg sm:w-auto"
+              className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-sky-500 px-4 py-3 text-sm font-semibold text-white shadow-md shadow-sky-100 transition duration-300 hover:-translate-y-1 hover:bg-sky-600 hover:shadow-lg sm:min-h-14 sm:gap-3 sm:rounded-2xl sm:px-7 sm:py-4 sm:text-base"
             >
-              Konsultasi Gratis
+              Mari Konsultasi
+
+              <ArrowUpRight
+                size={18}
+                className="shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
             </a>
 
             <a
               href="#portfolio"
-              className="inline-flex w-full items-center justify-center rounded-xl border border-slate-200 bg-white px-7 py-4 font-semibold text-slate-700 transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:bg-sky-50 hover:text-sky-600 sm:w-auto"
+              className="group inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-slate-700 transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700 sm:min-h-14 sm:gap-3 sm:rounded-2xl sm:px-7 sm:py-4 sm:text-base"
             >
+              <BriefcaseBusiness
+                size={18}
+                className="shrink-0 text-sky-500 transition-transform duration-300 group-hover:scale-110"
+              />
+
               Lihat Portofolio
             </a>
           </div>
 
-          {/* Informasi singkat */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-slate-500 lg:justify-start">
-            <div className="flex items-center gap-2">
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-sky-100 text-xs text-sky-600">
-                ✓
-              </span>
-              Website Responsif
-            </div>
+          {/* Ringkasan teknologi di mobile */}
+          <div className="mt-6 lg:hidden">
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+              Teknologi yang Digunakan
+            </p>
 
-            <div className="flex items-center gap-2">
-              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-sky-100 text-xs text-sky-600">
-                ✓
-              </span>
-              Desain Modern
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              {technologies.map(({ name, Icon, color }) => (
+                <div
+                  key={name}
+                  title={name}
+                  className="flex h-9 w-9 items-center justify-center rounded-xl border border-sky-100 bg-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-sky-50"
+                >
+                  <Icon
+                    size={21}
+                    color={color}
+                    aria-hidden="true"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Kolom kanan: Visual mockup */}
-          <div className="animate-fade-up animation-delay-200 relative mx-auto w-full max-w-xl lg:max-w-none">
-          {/* Panel latar */}
-          <div className="absolute inset-4 rotate-3 rounded-[2rem] bg-sky-100 sm:inset-6" />
-          {/* Mockup utama */}
-          <div className="animate-float relative rounded-[1.75rem] border border-sky-100 bg-white p-3 shadow-2xl shadow-sky-100/70 sm:p-4">
-            {/* Browser bar */}
-            <div className="flex items-center gap-2 border-b border-slate-100 px-3 pb-4 pt-2">
-              <span className="h-2.5 w-2.5 rounded-full bg-slate-300" />
-              <span className="h-2.5 w-2.5 rounded-full bg-slate-300" />
-              <span className="h-2.5 w-2.5 rounded-full bg-slate-300" />
+        {/* Kolom kanan — Technology Stack */}
+        <div className="animate-fade-up animation-delay-200 relative mx-auto w-full max-w-2xl lg:max-w-none">
+          {/* Dekorasi titik */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-4 -top-4 -z-10 hidden h-24 w-24 opacity-70 sm:block"
+            style={{
+              backgroundImage:
+                "radial-gradient(#bae6fd 1.8px, transparent 1.8px)",
+              backgroundSize: "20px 20px",
+            }}
+          />
 
-              <div className="ml-3 flex-1 rounded-lg bg-slate-50 px-4 py-2 text-xs text-slate-400">
-                aplikasi-bisnis.com
+          {/* Panel utama */}
+          <div className="relative rounded-2xl border border-sky-100 bg-white p-3.5 shadow-[0_20px_60px_rgba(14,165,233,0.10)] sm:rounded-[2rem] sm:p-6 md:p-8">
+            {/* Header panel */}
+            <div className="mb-4 flex items-center gap-3 sm:mb-7 sm:gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-sky-100 bg-sky-50 sm:h-14 sm:w-14 sm:rounded-2xl">
+                <Code2
+                  size={23}
+                  className="text-sky-600 sm:size-7"
+                />
+              </div>
+
+              <div>
+                <p className="text-sm font-bold uppercase tracking-wide text-sky-600 sm:text-base">
+                  Technology Stack
+                </p>
+
+                <p className="mt-0.5 text-xs leading-5 text-slate-500 sm:mt-1 sm:text-sm">
+                  Teknologi modern untuk solusi digital
+                </p>
               </div>
             </div>
 
-            {/* Mockup dashboard */}
-            <div className="grid gap-4 p-3 sm:grid-cols-[1fr_1.5fr] sm:p-5">
-              {/* Sidebar */}
-              <div className="hidden rounded-2xl bg-slate-50 p-4 sm:block">
-                <div className="mb-7 flex items-center gap-2">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500 text-sm font-bold text-white">
-                    D
+            {/* Grid teknologi */}
+            <div className="grid grid-cols-3 gap-2 sm:gap-4">
+              {technologies.map(({ name, Icon, color }) => (
+                <div
+                  key={name}
+                  className="group flex min-h-[94px] min-w-0 flex-col items-center justify-center rounded-xl border border-slate-100 bg-white px-1 py-3 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-200 hover:bg-sky-50/50 hover:shadow-lg hover:shadow-sky-100/50 sm:min-h-[142px] sm:rounded-2xl sm:px-2 sm:py-5"
+                >
+                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-50 transition duration-300 group-hover:scale-105 group-hover:bg-white sm:h-16 sm:w-16 sm:rounded-2xl">
+                    <Icon
+                      size={25}
+                      color={color}
+                      aria-hidden="true"
+                      className="max-h-6 max-w-6 sm:max-h-10 sm:max-w-10"
+                    />
                   </div>
 
-                  <span className="text-sm font-bold text-slate-800">
-                    Dashboard
+                  <span className="mt-2 break-words text-center text-[10px] font-semibold leading-tight text-slate-700 sm:mt-3 sm:text-sm">
+                    {name}
                   </span>
                 </div>
-
-                <div className="space-y-3">
-                  <div className="rounded-lg bg-sky-100 px-3 py-2.5 text-xs font-medium text-sky-700">
-                    Ringkasan
-                  </div>
-
-                  <div className="rounded-lg px-3 py-2.5 text-xs text-slate-500">
-                    Data Transaksi
-                  </div>
-
-                  <div className="rounded-lg px-3 py-2.5 text-xs text-slate-500">
-                    Laporan
-                  </div>
-
-                  <div className="rounded-lg px-3 py-2.5 text-xs text-slate-500">
-                    Pengaturan
-                  </div>
-                </div>
-              </div>
-
-              {/* Main dashboard */}
-              <div className="min-w-0">
-                <div className="mb-5">
-                  <p className="text-xs text-slate-400">
-                    Selamat datang kembali
-                  </p>
-
-                  <h3 className="mt-1 text-lg font-bold text-slate-800 sm:text-xl">
-                    Ringkasan Bisnis
-                  </h3>
-                </div>
-
-                {/* Statistik visual dekoratif */}
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="rounded-xl border border-sky-100 bg-sky-50/70 p-3 sm:p-4">
-                    <p className="text-[10px] text-slate-500 sm:text-xs">
-                      Total Pengunjung
-                    </p>
-
-                    <div className="mt-2 text-xl font-bold text-slate-800 sm:text-2xl">
-                      2.480
-                    </div>
-
-                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-sky-100">
-                      <div className="h-full w-3/4 rounded-full bg-sky-500" />
-                    </div>
-                  </div>
-
-                  <div className="rounded-xl border border-slate-100 bg-white p-3 sm:p-4">
-                    <p className="text-[10px] text-slate-500 sm:text-xs">
-                      Aktivitas
-                    </p>
-
-                    <div className="mt-2 text-xl font-bold text-slate-800 sm:text-2xl">
-                      Aktif
-                    </div>
-
-                    <div className="mt-2 flex items-center gap-1.5">
-                      <span className="h-2 w-2 rounded-full bg-emerald-400" />
-                      <span className="text-[10px] text-slate-500 sm:text-xs">
-                        Sistem berjalan
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Grafik dekoratif */}
-                <div className="mt-4 rounded-xl border border-slate-100 bg-white p-4">
-                  <div className="mb-5 flex items-center justify-between">
-                    <p className="text-xs font-semibold text-slate-700 sm:text-sm">
-                      Aktivitas Mingguan
-                    </p>
-
-                    <span className="rounded-md bg-sky-50 px-2 py-1 text-[10px] text-sky-600">
-                      Minggu ini
-                    </span>
-                  </div>
-
-                  <div className="flex h-28 items-end justify-between gap-2 sm:h-36">
-                    {[45, 70, 55, 85, 60, 95, 75].map((height, index) => (
-                      <div
-                        key={index}
-                        className="flex h-full flex-1 items-end"
-                      >
-                        <div
-                          className={`w-full rounded-t-md ${
-                            index === 5 ? "bg-sky-500" : "bg-sky-200"
-                          }`}
-                          style={{ height: `${height}%` }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-3 flex justify-between text-[9px] text-slate-400 sm:text-[10px]">
-                    <span>Sen</span>
-                    <span>Sel</span>
-                    <span>Rab</span>
-                    <span>Kam</span>
-                    <span>Jum</span>
-                    <span>Sab</span>
-                    <span>Min</span>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
 
-            {/* Bagian bawah mockup */}
-            <div className="mx-3 mb-2 flex items-center justify-between rounded-xl border border-slate-100 bg-white p-3 sm:mx-5 sm:p-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-100 text-sky-600">
-                  ✓
-                </div>
+            {/* Teknologi pendukung */}
+            <div className="mt-3 grid grid-cols-3 divide-x divide-sky-100 overflow-hidden rounded-xl border border-sky-100 bg-white sm:mt-6 sm:rounded-2xl">
+              <div className="flex min-w-0 items-center justify-center gap-1.5 px-1 py-3 sm:gap-2.5 sm:px-3 sm:py-4">
+                <SiGithub
+                  size={18}
+                  aria-hidden="true"
+                  className="shrink-0 text-slate-800 sm:size-5"
+                />
 
-                <div>
-                  <p className="text-xs font-semibold text-slate-700">
-                    Pengalaman Digital
-                  </p>
-
-                  <p className="mt-1 text-[10px] text-slate-400">
-                    Dirancang untuk kebutuhan bisnis
-                  </p>
-                </div>
+                <span className="text-[10px] font-semibold text-slate-700 sm:text-sm">
+                  GitHub
+                </span>
               </div>
 
-              <span className="rounded-lg bg-sky-50 px-3 py-2 text-[10px] font-medium text-sky-600">
-                Modern
-              </span>
-            </div>
-          </div>
+              <div className="flex min-w-0 items-center justify-center gap-1.5 px-1 py-3 sm:gap-2.5 sm:px-3 sm:py-4">
+                <SiGit
+                  size={18}
+                  aria-hidden="true"
+                  className="shrink-0 text-orange-600 sm:size-5"
+                />
 
-          {/* Kartu mengambang */}
-          <div className="animate-float absolute -left-3 top-1/4 hidden rounded-2xl border border-sky-100 bg-white p-4 shadow-xl shadow-sky-100/60 sm:block lg:-left-8">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-lg">
-                {"</>"}
+                <span className="text-[10px] font-semibold text-slate-700 sm:text-sm">
+                  Git
+                </span>
               </div>
 
-              <div>
-                <p className="text-xs font-semibold text-slate-800">
-                  Pengembangan
-                </p>
+              <div className="flex min-w-0 items-center justify-center gap-1.5 px-1 py-3 sm:gap-2.5 sm:px-3 sm:py-4">
+                <Code2
+                  size={18}
+                  aria-hidden="true"
+                  className="shrink-0 text-sky-600 sm:size-5"
+                />
 
-                <p className="mt-1 text-[10px] text-slate-400">
-                  Solusi sesuai kebutuhan
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="animate-float animation-delay-400 absolute -bottom-5 right-2 rounded-2xl border border-sky-100 bg-white p-4 shadow-xl shadow-sky-100/60 sm:right-5">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-white">
-                ✓
-              </div>
-
-              <div>
-                <p className="text-xs font-semibold text-slate-800">
-                  Siap Dikembangkan
-                </p>
-
-                <p className="mt-1 text-[10px] text-slate-400">
-                  Fleksibel dan terstruktur
-                </p>
+                <span className="text-[10px] font-semibold text-slate-700 sm:text-sm">
+                  REST API
+                </span>
               </div>
             </div>
           </div>

@@ -30,13 +30,6 @@ export default function CTA() {
             >
               Mulai Konsultasi
             </a>
-
-            <a
-              href="#portfolio"
-              className="w-full rounded-xl border border-sky-200 bg-white px-7 py-4 font-semibold text-sky-600 transition duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-sky-50 sm:w-auto"
-            >
-              Lihat Portofolio
-            </a>
           </div>
         </div>
       </Reveal>
